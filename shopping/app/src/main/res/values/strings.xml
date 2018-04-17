@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">shopping</string>
+    <string name="shoppings">商城</string>
+    <string name="wo">我</string>
+    <string name="shoppingcart">购物车</string>
+    <string name="shoppingcat">购物车</string>
+    <string name="actionBar_edit">编辑</string>
+    <string name="all">全选</string>
+    <string name="order_total">合计 :</string>
+</resources>
