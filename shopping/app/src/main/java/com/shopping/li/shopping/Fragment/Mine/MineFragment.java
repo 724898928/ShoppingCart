@@ -1,4 +1,4 @@
-package com.shopping.li.shopping.Fragment;
+package com.shopping.li.shopping.Fragment.Mine;
 
 
 import android.os.Bundle;
@@ -8,13 +8,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.shopping.li.shopping.Fragment.BaseFragment;
 import com.shopping.li.shopping.R;
 
 /**
  * Created by li on 2018/2/24.
  */
 
-public class MainFragment extends BaseFragment {
+public class MineFragment extends BaseFragment {
 TextView tvContent;
 private  View mView;
 String tag= "tag";

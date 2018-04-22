@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 
-import com.shopping.li.shopping.Adapter.BaseAdapter;
 import com.shopping.li.shopping.R;
 
 import java.util.ArrayList;
@@ -29,7 +28,6 @@ public class BaseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.expandablelist_layout,container,false);
-        adapter = new BaseAdapter();
 
 
         return view;

@@ -1,4 +1,4 @@
-package com.shopping.li.shopping.Fragment;
+package com.shopping.li.shopping.Fragment.Mall;
 
 
 import android.os.Bundle;
@@ -8,19 +8,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.shopping.li.shopping.Fragment.BaseFragment;
+
 /**
  * Created by li on 2018/2/24.
  */
 
-public class AlcoholFragment extends BaseFragment {
-
+public class FoodFragment extends BaseFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
-        for (int i= 0;i<50;i++){
-            mDatas.add("我是Alcohol"+i);
-        }
 
         return super.onCreateView(inflater, container, savedInstanceState);
     }

@@ -3,9 +3,9 @@ package com.shopping.li.shopping.FragmentFactory;
 import android.os.Bundle;
 
 import com.shopping.li.shopping.Fragment.FragmentInfo;
-import com.shopping.li.shopping.Fragment.MainFragment;
-import com.shopping.li.shopping.Fragment.MallFragment;
-import com.shopping.li.shopping.Fragment.ShopppingCartFragment;
+import com.shopping.li.shopping.Fragment.Mine.MineFragment;
+import com.shopping.li.shopping.Fragment.Mall.MallFragment;
+import com.shopping.li.shopping.Fragment.Shoppingcart.ShopppingCartFragment;
 import com.shopping.li.shopping.R;
 
 import java.util.ArrayList;
@@ -56,7 +56,7 @@ public class MainFragmentFactory {
             );
             Bundle bundle1 = new Bundle();
             bundle.putString(tag,mBotTitles[1]);
-            FragmentInfo Myfragment = new FragmentInfo(MainFragment.class,
+            FragmentInfo Myfragment = new FragmentInfo(MineFragment.class,
                     mBotTitles[1],
                     bundle1,
                     null,

@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.shopping.li.shopping.BaseActivity.BaseActivity;
 import com.shopping.li.shopping.Fragment.FragmentInfo;
-import com.shopping.li.shopping.Fragment.MainFragment;
+import com.shopping.li.shopping.Fragment.Mine.MineFragment;
 import com.shopping.li.shopping.FragmentFactory.MainFragmentFactory;
 import com.shopping.li.shopping.logUtil.LogUtil;
 
@@ -21,19 +21,17 @@ import java.util.List;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
-    private String[] mTabTitles = {"电子", "酒类", "日用品", "食品"};
     private String[] mBotTitles = new String[]{"商城", "我", "购物车"};
     private FragmentTabHost mTabHost;
     private TabWidget mTabWidget;
     private List<FragmentInfo> mFragmentEntities;
-    MainFragment mainFragment = new MainFragment();
+    MineFragment mineFragment = new MineFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         LogUtil.d("MainActivity", "onCreate");
-
         //实例化FragmentTabHost并设置相关样式
         mTabHost = findViewById(android.R.id.tabhost);
         mTabHost.setup(this, getSupportFragmentManager(),

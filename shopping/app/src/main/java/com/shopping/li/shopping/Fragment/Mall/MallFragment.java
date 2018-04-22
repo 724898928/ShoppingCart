@@ -1,4 +1,4 @@
-package com.shopping.li.shopping.Fragment;
+package com.shopping.li.shopping.Fragment.Mall;
 
 import android.content.Context;
 import android.os.Bundle;

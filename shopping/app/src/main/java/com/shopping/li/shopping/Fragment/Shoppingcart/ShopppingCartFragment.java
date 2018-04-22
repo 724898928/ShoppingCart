@@ -1,4 +1,4 @@
-package com.shopping.li.shopping.Fragment;
+package com.shopping.li.shopping.Fragment.Shoppingcart;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -25,7 +25,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 
 import in.srain.cube.views.ptr.PtrClassicDefaultHeader;
 import in.srain.cube.views.ptr.PtrDefaultHandler;
@@ -146,28 +145,7 @@ public class ShopppingCartFragment extends Fragment  implements View.OnClickList
         mcontext = this.getContext();
         groups = new ArrayList<StoreInfo>();
         childs = new HashMap<String, List<GoodsInfo>>();
-        for (int i = 0; i < 3; i++) {
-            groups.add(new StoreInfo(i + "", "小马的第" + (i + 1) + "号当铺"));
-            List<GoodsInfo> goods = new ArrayList<>();
-            for (int j = 0; j <= i; j++) {
-                int[] img = {
-                        R.drawable.detail_show_1,
-                        R.drawable.detail_show_1,
-                        R.drawable.detail_show_1,
-                        R.drawable.detail_show_1,
-                        R.drawable.detail_show_1,
-                        R.drawable.detail_show_1};
-                //i-j 就是商品的id， 对应着第几个店铺的第几个商品，1-1 就是第一个店铺的第一个商品
-                goods.add(new GoodsInfo(i + "-" + j, "商品",
-                        groups.get(i).getName() + "的第" +
-                                (j + 1) + "个商品", 255.00 +
-                        new Random().nextInt(1500),
-                        1555 + new Random().nextInt(3000),
-                        "第一排", "出头天者", img[j],
-                        new Random().nextInt(100)));
-            }
-            childs.put(groups.get(i).getId(), goods);
-        }
+
     }
 
     private void initEvents() {

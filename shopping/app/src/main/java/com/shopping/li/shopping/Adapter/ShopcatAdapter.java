@@ -141,7 +141,7 @@ public class ShopcatAdapter extends BaseAdapter {
     public View getChildView(final int groupPosition, final int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         final ChildViewHolder childViewHolder;
         if (convertView == null) {
-            convertView = View.inflate(mcontext, R.layout.item_shopcat_product, null);
+            convertView = View.inflate(mcontext, R.layout.item_shopcat_group, null);
             childViewHolder = new ChildViewHolder();
             childViewHolder.singleCheckBox=convertView.findViewById(R.id.single_checkBox);
             childViewHolder.goodsImage=convertView.findViewById(R.id.goods_image);
@@ -154,9 +154,9 @@ public class ShopcatAdapter extends BaseAdapter {
             childViewHolder.reduceGoodsNum=convertView.findViewById(R.id.reduce_goodsNum);
             childViewHolder.goodsNum=convertView.findViewById(R.id.goods_Num);
             childViewHolder.increaseGoodsNum=convertView.findViewById(R.id.increase_goods_Num);
-            childViewHolder.goodsSize=convertView.findViewById(R.id.goodsSize);
+            //childViewHolder.goodsSize=convertView.findViewById(R.id.goodsSize);
             childViewHolder.delGoods=convertView.findViewById(R.id.del_goods);
-            childViewHolder.editGoodsData=convertView.findViewById(R.id.edit_goods_data);
+          //  childViewHolder.editGoodsData=convertView.findViewById(R.id.edit_goods_data);
             convertView.setTag(childViewHolder);
         } else {
             childViewHolder = (ChildViewHolder) convertView.getTag();
